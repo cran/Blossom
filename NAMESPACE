@@ -1,0 +1,64 @@
+useDynLib(Blossom,wraplad,wrapemrpp,wrapmrpp,wrapmrbp,wrapptmp,wrapmrsp,wrapcov,wrapksgf,wrapmedq)
+
+import(grDevices)
+import(utils)
+import(graphics)
+import(methods)
+importFrom("stats",
+           complete.cases, 
+           is.empty.model, 
+           median,
+           model.response, 
+           model.weights, 
+           na.omit, 
+           symnum,
+           var,
+           anova,
+           coef,
+           coefficients,
+           confint,
+           deviance,
+           fitted,
+           formula,
+           model.frame,
+           model.matrix,
+           predict,
+           residuals,
+           resid,
+           simulate,
+           terms,
+           vcov
+           )
+           
+export("coverage",
+    "hypothesis.test",
+    "lad",
+    "medq",
+    "mrbp",
+    "mrpp",
+    "ols",
+    "ptmp",
+    "sp"
+    )
+
+exportClass("CoverageObj")
+exportClass("EMRPPObj")
+exportClass("KSGFObj")
+exportClass("LADObj")
+exportClass("MEDQObj")
+exportClass("MRBPObj")
+exportClass("MRSPObj")
+exportClass("PTMPObj")
+
+
+exportMethods("ResampVals")
+exportMethods("pvalue")
+exportMethods("Dist2mvm")
+exportMethods("QuantValues")
+exportMethods("residuals")
+exportMethods("print")
+exportMethods("summary")
+exportMethods("show")
+exportMethods("coefficients")
+exportMethods("predict")
+
