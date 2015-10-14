@@ -21510,6 +21510,7 @@ USE DoLadMod
 implicit none
 
 !___Dummy Arguments:
+INTEGER :: i_NumVarFull
 INTEGER :: i_NumRows
 INTEGER :: i_NumCols
 INTEGER :: i_NumCases
@@ -21519,7 +21520,6 @@ INTEGER :: i_NumPermut
 INTEGER :: i_NumToDrop !eventually should be intent in only
 INTEGER :: ia_PosToDrop((i_NumVarFull))
 INTEGER :: i_SaveTest
-INTEGER :: i_NumVarFull
 INTEGER :: i_NumVarRed
 LOGICAL :: l_DoublePermutation
 INTEGER :: i_Test
@@ -21581,7 +21581,8 @@ USE covermod
 USE blcmnmod, ONLY: d_ZERO
 IMPLICIT NONE
 !___Dummy Aruguments:
-
+INTEGER,          INTENT(IN)  :: i_NumObs
+INTEGER,          INTENT(IN)  :: grpLength
 INTEGER,          INTENT(INOUT)    :: i_NumSimuls
 REAL (KIND(0D0)), INTENT(IN)    :: d_V_DistExp
 INTEGER,          INTENT(IN)    :: i_NumGrps
@@ -21605,8 +21606,7 @@ REAL (KIND(0D0)), INTENT(OUT) :: da_STV(i_NumSimuls+1)   ! save test values
 INTEGER,          INTENT(IN)    :: i_NumGroups
 LOGICAL,          INTENT(IN)   :: l_DoEGSECT
 REAL (KIND(0D0)), INTENT(IN)   :: da_GpVals(i_NumGrps)
-INTEGER,          INTENT(IN)  :: i_NumObs
-INTEGER,          INTENT(IN)  :: grpLength
+
 REAL (KIND(0D0)), INTENT(OUT) :: d_Delta
 d_Delta=d_ZERO
 call rungsect(d_SKT, d_Delta, i_NumSimuls,d_V_DistExp,i_NumGrps,  &
@@ -21641,6 +21641,7 @@ SUBROUTINE Wrapksgf(da_ObserV, &
 IMPLICIT NONE
 
 !___Dummy Arguments:
+INTEGER,          INTENT(IN)   :: i_NumCases
 REAL (KIND(0D0)), INTENT(INOUT) :: da_ObserV(i_NumCases)
 REAL (KIND(0D0)), INTENT(OUT)   :: d_Tobs
 REAL (KIND(0D0)), INTENT(OUT)   :: d_Test
@@ -21653,7 +21654,7 @@ REAL (KIND(0D0)), INTENT(OUT)   :: d_PValue
 INTEGER,          INTENT(OUT)   :: iEr
 REAL (KIND(0D0)), INTENT(IN) :: d_ArcIntv
 LOGICAL,          INTENT(IN)   :: l_DoArc
-INTEGER,          INTENT(IN)   :: i_NumCases
+
 
 call runksgf(da_ObserV, &
           d_TObs,    &

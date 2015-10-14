@@ -1,4 +1,4 @@
-8b67fa4125df01efa89119327270509b *DESCRIPTION
+278c138017d0d554d63b1beca96989ae *DESCRIPTION
 64136faf273f6b738c672b8a40d64fe8 *NAMESPACE
 e1217f0e04092de351dbc64a4c18e6ea *R/CoverageObjDef.r
 be96e3facb34ff5b850ff515421d5f61 *R/EMRPPObjDef.r
@@ -81,5 +81,5 @@ d56409766415582a04cc46fe03824f97 *man/paired2.Rd
 960b43c70c8c8c665b54e5857d5613ed *man/pvalue.Rd
 cc0134e93701a92536dfbda21d2ff6f0 *man/rao.Rd
 fea3fb9a986721b20d8edaa7fef2dc74 *man/sp.Rd
-e2bffc4a74c328f384525a277b4a63a8 *src/InternalFcts.f90
+de92b5f8eb82528bcbdf157d354f23c8 *src/InternalFcts.f90
 578eb7def40a3dfc906a3512bed38601 *src/myHelp.c
