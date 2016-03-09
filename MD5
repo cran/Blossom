@@ -1,4 +1,4 @@
-278c138017d0d554d63b1beca96989ae *DESCRIPTION
+6951264ab99610e7bd12d1bc5950eb04 *DESCRIPTION
 64136faf273f6b738c672b8a40d64fe8 *NAMESPACE
 e1217f0e04092de351dbc64a4c18e6ea *R/CoverageObjDef.r
 be96e3facb34ff5b850ff515421d5f61 *R/EMRPPObjDef.r
@@ -38,6 +38,7 @@ e39f40c963ae6b6d85228008e3d2ea91 *data/paired1.txt.gz
 ad2a43ef8ce092b409c3a92cc3438034 *data/paired2.txt.gz
 ed76185cb2ff560ce209a256a3a27f15 *data/prefer.txt.gz
 c2817d92c37a5b4a7a83851887f76172 *data/rao.txt.gz
+7cca8bfa08cfcc4333c4f4a7fcdac5c7 *inst/doc/BlossomVignette.pdf
 8768bddfe1bf8121f9ebfbac2da7cf76 *man/BlossomPkg.Rd
 d0dc6ae77895de0b5f1696399b2d75db *man/CoverageObj-class.Rd
 3d19a7df707a3f71ceb6f2c9a41b7bcf *man/Dist2mvm.Rd
